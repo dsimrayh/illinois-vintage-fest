@@ -1,5 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Anton", sans-serif;
+}
+
+#site-wrapper {
+  padding: 3rem;
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-size: 5rem;
+  text-transform: uppercase;
 }
