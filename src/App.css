@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  letter-spacing: 1px;
 }
 
 :root {
@@ -11,11 +13,5 @@
 }
 
 #site-wrapper {
-  padding: 3rem;
-}
-
-h1 {
-  font-family: var(--main-font);
-  font-size: 5rem;
-  text-transform: uppercase;
+  min-height: 100vh;
 }
