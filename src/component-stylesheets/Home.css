@@ -1,0 +1,26 @@
+h1 {
+  font-size: 14rem;
+  font-family: var(--main-font);
+  color: #fff;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1;
+  margin-top: -0.5rem;
+}
+
+#hero {
+  padding: 2rem 4rem;
+  background-color: var(--primary-blue);
+
+  display: flex;
+}
+
+#hero-img-container {
+  margin-top: -0.5rem;
+}
+
+#hero-img {
+  width: 600px;
+  transform: rotate(4deg);
+}
