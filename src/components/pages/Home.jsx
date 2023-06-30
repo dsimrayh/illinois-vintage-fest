@@ -5,7 +5,10 @@ export default function Home() {
     <>
       <main id="main">
         <section id="hero">
-          <h1>Illinois Vintage Fest</h1>
+          <div id="hero-text-container">
+            <h1>Illinois Vintage Fest</h1>
+            <p id="hero-sub-text">Established in 2020</p>
+          </div>
           <div id="hero-img-container">
             <img
               src="../src/assets/home-page-photo.jpg"

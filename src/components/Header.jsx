@@ -9,20 +9,23 @@ export default function Header() {
     <header id="header">
       <img
         id="logo-image"
+        className="pointer"
         src="./src/assets/ivf-logo.png"
         alt="logo-image"
         onClick={loadHomePage}
       ></img>
       <nav id="nav">
         <ul id="nav-ul">
-          <li className="nav-item">Upcoming</li>
-          <li className="nav-item">Previous</li>
-          <li className="nav-item">Our Story</li>
-          <li className="nav-item">Shop</li>
-          <li className="nav-item">FAQ</li>
+          <li className="nav-item pointer">Upcoming</li>
+          <li className="nav-item pointer">Previous</li>
+          <li className="nav-item pointer">Our Story</li>
+          <li className="nav-item pointer">Shop</li>
+          <li className="nav-item pointer">FAQ</li>
         </ul>
       </nav>
-      <button id="header-button">Vintage Fest</button>
+      <button id="header-button" className="pointer">
+        Vintage Fest
+      </button>
     </header>
   );
 }

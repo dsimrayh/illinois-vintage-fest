@@ -4,29 +4,25 @@
   text-transform: uppercase;
 }
 
-#logo-image,
-#header-button,
-.nav-item {
-  cursor: pointer;
-}
-
 #header {
   background-color: var(--primary-blue);
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 #logo-image {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 #header-button {
-  padding: 35px 50px;
-  font-size: 2rem;
+  min-width: fit-content;
+  padding: 0.8em 1em;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
   background-color: #e68e97;
   color: #fff;
   border: none;
@@ -38,12 +34,6 @@
   transform: scale(0.95);
 }
 
-#nav {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-}
-
 #nav-ul {
   list-style: none;
 
@@ -53,9 +43,9 @@
 }
 
 .nav-item {
-  margin: 0 1rem;
+  margin: 0 0.5em;
   color: #fff;
-  font-size: 1.75rem;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
 }
 
 .nav-item:hover {
