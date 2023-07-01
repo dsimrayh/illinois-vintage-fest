@@ -1,0 +1,28 @@
+#marquee-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#marquee {
+  white-space: nowrap;
+
+  display: flex;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-block {
+  font-family: var(--main-font);
+  font-size: 1.25rem;
+
+  display: flex;
+  align-items: center;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
