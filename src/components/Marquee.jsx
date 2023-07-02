@@ -8,73 +8,78 @@ export default function Marquee() {
         src="../src/assets/stickers/balloon-purple.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-red.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-purple.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-red.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-purple.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-red.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-purple.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-red.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-purple.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
       <p>Illinois Vintage Fest</p>
       <img
         src="../src/assets/stickers/balloon-red.png"
         width="60"
         height="60"
+        alt="balloon-image"
       ></img>
     </div>
   );
 
   return (
-    <section id="marquee-wrapper">
-      <div id="marquee">
-        <MarqueeBlock></MarqueeBlock>
-        <MarqueeBlock></MarqueeBlock>
-        <MarqueeBlock></MarqueeBlock>
-        <MarqueeBlock></MarqueeBlock>
-        <MarqueeBlock></MarqueeBlock>
-      </div>
+    <section id="marquee">
+      <MarqueeBlock></MarqueeBlock>
+      <MarqueeBlock></MarqueeBlock>
     </section>
   );
 }

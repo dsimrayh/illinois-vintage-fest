@@ -8,7 +8,7 @@ function App() {
     <div id="site-wrapper">
       <Header></Header>
       <Home></Home>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

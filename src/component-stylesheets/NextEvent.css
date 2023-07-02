@@ -1,0 +1,32 @@
+#next-event {
+  display: flex;
+}
+
+/* #next-event > * {
+  border: 2px solid red;
+} */
+
+#flyer-container {
+}
+
+#flyer-img {
+}
+
+#description-container {
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
+}
+
+#next-event-heading {
+  font-family: var(--main-font);
+}
+
+#next-event-description {
+  font-family: sans-serif;
+}

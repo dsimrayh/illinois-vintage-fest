@@ -1,13 +1,7 @@
-#marquee-wrapper {
-  max-width: 100%;
-  overflow: hidden;
-}
-
 #marquee {
-  white-space: nowrap;
+  overflow: hidden;
 
   display: flex;
-  animation: marquee 30s linear infinite;
 }
 
 .marquee-block {
@@ -16,6 +10,9 @@
 
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+
+  animation: marquee 15s linear infinite;
 }
 
 @keyframes marquee {
@@ -23,6 +20,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
