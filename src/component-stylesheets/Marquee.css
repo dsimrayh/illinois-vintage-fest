@@ -1,11 +1,12 @@
 #marquee {
+  background-color: #fffeea;
   overflow: hidden;
 
   display: flex;
 }
 
 .marquee-block {
-  font-family: var(--main-font);
+  font-family: var(--marquee-font);
   font-size: 1.25rem;
 
   display: flex;

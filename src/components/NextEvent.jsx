@@ -11,11 +11,16 @@ export default function NextEvent() {
         ></img>
       </div>
       <div id="description-container">
-        <h2 id="next-event-heading">Illinois Vintage Fest 14</h2>
-        <p id="next-event-description">
-          We will be returning to the Geneva Commons on July 15th from 11AM-5PM.
-          Come shop with the best vendors in the Midwest!
-        </p>
+        <div id="description-text-wrapper">
+          <h2 id="next-event-heading">Illinois Vintage Fest 14</h2>
+          <p id="next-event-description">
+            We will be returning to the Geneva Commons on July 15th from
+            11AM-5PM. Come shop with the best vendors in the Midwest!
+          </p>
+        </div>
+        <div id="description-button-wrapper">
+          <button id="learn-more-btn">Learn More</button>
+        </div>
       </div>
     </section>
   );
