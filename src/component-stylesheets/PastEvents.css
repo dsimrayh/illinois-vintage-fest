@@ -1,0 +1,73 @@
+#past-events {
+  background-color: #fd7f85;
+  padding: 3.5rem 1.5rem 5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+#past-events-heading {
+  font-family: var(--main-font);
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#past-events-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.past-events-img {
+  width: 18vw;
+  min-width: 15rem;
+  block-size: auto;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.past-events-img:hover {
+  animation: shake 0.75s 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(1deg);
+  }
+  20% {
+    transform: rotate(-1deg);
+  }
+  30% {
+    transform: rotate(1deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  60% {
+    transform: rotate(-1deg);
+  }
+  70% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  90% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

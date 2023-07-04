@@ -2,16 +2,22 @@
   display: flex;
 }
 
+#flyer-container {
+  background-color: rgb(237, 247, 255);
+  display: grid;
+  place-items: center;
+}
+
 #flyer-img {
   width: 54vw;
-  min-width: 32rem;
+  min-width: 26rem;
   aspect-ratio: 1/1;
   vertical-align: middle;
 }
 
 #description-container {
   background-color: rgb(237, 247, 255);
-  padding: 0.5rem 5rem;
+  padding: 2rem 5rem;
 
   display: flex;
   flex-direction: column;
@@ -48,4 +54,8 @@
   border: none;
   border-radius: 80px;
   box-shadow: -12px 12px 0 #965f65;
+}
+
+#learn-more-btn:active {
+  transform: scale(0.95);
 }

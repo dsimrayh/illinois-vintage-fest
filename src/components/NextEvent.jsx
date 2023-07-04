@@ -19,7 +19,9 @@ export default function NextEvent() {
           </p>
         </div>
         <div id="description-button-wrapper">
-          <button id="learn-more-btn">Learn More</button>
+          <button id="learn-more-btn" className="pointer">
+            Learn More
+          </button>
         </div>
       </div>
     </section>
