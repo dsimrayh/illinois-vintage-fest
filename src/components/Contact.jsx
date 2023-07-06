@@ -10,7 +10,11 @@ export default function Contact() {
       </p>
       <p id="contact-phone">708-627-9815</p>
 
-      <a href="https://my.community.com/illinoisvintagefest">
+      <a
+        href="https://my.community.com/illinoisvintagefest"
+        target="_blank"
+        rel="noreferrer"
+      >
         <button id="send-text-btn" className="pointer">
           Send a text
         </button>

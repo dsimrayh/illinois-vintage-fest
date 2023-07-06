@@ -49,5 +49,6 @@
 }
 
 .nav-item:hover {
-  color: #ddd;
+  color: #6cf089;
+  transition: color 0.4s ease;
 }
