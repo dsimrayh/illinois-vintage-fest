@@ -49,11 +49,11 @@
   padding: 0.7em 0.9em;
   font-size: clamp(1rem, 1vw + 1rem, 2rem);
   font-family: var(--main-font);
-  background-color: #e68e97;
-  color: #fff;
+  background-color: #a0e6a8;
+  color: #242424;
   border: none;
   border-radius: 80px;
-  box-shadow: -12px 12px 0 #965f65;
+  box-shadow: -12px 12px 0 #39523c;
 }
 
 #learn-more-btn:active {

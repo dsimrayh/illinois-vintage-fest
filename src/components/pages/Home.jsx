@@ -2,6 +2,7 @@ import Hero from '../Hero';
 import Marquee from '../Marquee';
 import NextEvent from '../NextEvent';
 import PastEvents from '../PastEvents';
+import Contact from '../Contact';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Marquee></Marquee>
       <NextEvent></NextEvent>
       <PastEvents></PastEvents>
+      <Contact></Contact>
     </main>
   );
 }

@@ -1,0 +1,47 @@
+#contact {
+  padding: 5rem 2rem;
+  background-color: #a0e6a8;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#contact-heading {
+  font-size: clamp(6rem, 10vw + 1rem, 12rem);
+  font-family: var(--main-font);
+  color: #303a30;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+#contact-subtext {
+  font-family: var(--sub-text-font);
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+}
+
+#contact-phone {
+  font-family: var(--main-font);
+  font-size: clamp(3rem, 5vw + 1rem, 8rem);
+  color: #1c201b;
+}
+
+#send-text-btn {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  min-width: fit-content;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  color: #fff;
+  padding: 0.8em 1em;
+  background-color: #d48c50;
+  border: none;
+  border-radius: 80px;
+  box-shadow: -12px 12px 0 #6e492b;
+}
+
+#send-text-btn:active {
+  transform: scale(0.95);
+}
