@@ -19,12 +19,12 @@ export default function Header() {
           <li className="nav-item pointer">Upcoming</li>
           <li className="nav-item pointer">Previous</li>
           <li className="nav-item pointer">Our Story</li>
-          <li className="nav-item pointer">Shop</li>
+          <li className="nav-item pointer">Contact</li>
           <li className="nav-item pointer">FAQ</li>
         </ul>
       </nav>
       <button id="header-button" className="pointer">
-        Vintage Fest
+        Shop
       </button>
     </header>
   );

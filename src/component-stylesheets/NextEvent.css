@@ -3,7 +3,7 @@
 }
 
 #flyer-container {
-  background-color: rgb(237, 247, 255);
+  background-color: rgb(236, 246, 253);
   display: grid;
   place-items: center;
 }
@@ -16,7 +16,7 @@
 }
 
 #description-container {
-  background-color: rgb(237, 247, 255);
+  background-color: rgb(236, 246, 253);
   padding: 2rem 5rem;
 
   display: flex;
