@@ -25,11 +25,11 @@ h1 {
 }
 
 #hero-sub-text {
-  font-size: clamp(1.5rem, 2.5vw, 3rem);
-  font-family: var(--main-font);
+  font-size: clamp(1.5rem, 3vw, 3.5rem);
+  font-family: var(--established-font);
   color: #fff;
   line-height: 1;
-  text-shadow: -4px 10px 5px #000;
+  text-shadow: -0.1em 0.1em 3px #000;
 }
 
 #hero-img {

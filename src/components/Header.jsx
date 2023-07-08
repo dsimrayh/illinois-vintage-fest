@@ -1,8 +1,16 @@
 import '../component-stylesheets/Header.css';
+import ShopClosedModal from '../components/ShopClosedModal';
+import { useState } from 'react';
 
 export default function Header() {
+  const [shopClosedModalVisible, setShopClosedModalVisible] = useState(false);
+
   function loadHomePage() {
     console.log('load home page');
+  }
+
+  function handleShopBtnClick() {
+    setShopClosedModalVisible(true);
   }
 
   return (
@@ -23,9 +31,18 @@ export default function Header() {
           <li className="nav-item pointer">FAQ</li>
         </ul>
       </nav>
-      <button id="header-button" className="pointer">
+      <button
+        id="header-button"
+        className="pointer"
+        onClick={handleShopBtnClick}
+      >
         Shop
       </button>
+      {shopClosedModalVisible && (
+        <ShopClosedModal
+          setModalVisible={setShopClosedModalVisible}
+        ></ShopClosedModal>
+      )}
     </header>
   );
 }

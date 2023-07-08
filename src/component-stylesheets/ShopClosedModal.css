@@ -1,0 +1,44 @@
+#shop-closed-modal {
+  background-color: rgb(234, 245, 255);
+  font-family: var(--sub-text-font);
+  padding: 6rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px #333, -5px -5px 20px #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#shop-closed-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#shop-closed-text {
+  font-size: 1.5rem;
+}
+
+#shop-closed-subtext {
+  font-size: 1rem;
+}
+
+#go-back-btn {
+  font-family: var(--sub-text-font);
+  font-size: 1.25rem;
+  color: #fff;
+  padding: 1em 2rem;
+  background-color: rgb(46, 81, 196);
+  border-radius: 20px;
+  border: none;
+}

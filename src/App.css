@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 
 * {
   margin: 0;
@@ -10,10 +11,16 @@
   letter-spacing: 1px;
 }
 
+@font-face {
+  font-family: "Jack Armstrong";
+  src: url("../src/assets/jack-armstrong.ttf");
+}
+
 :root {
   --main-font: "Anton", sans-serif;
-  --sub-text-font: "Acme", sans-serif;
-  --marquee-font: "Carter One", cursive;
+  --established-font: "La Belle Aurore", cursive;
+  --sub-text-font: "Jack Armstrong", "Acme", sans-serif;
+  --marquee-font: "Jack Armstrong", "Carter One", sans-serif;
   --primary-blue: #9db8ff;
 }
 

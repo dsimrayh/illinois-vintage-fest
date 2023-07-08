@@ -1,6 +1,6 @@
 #footer {
   background-color: rgb(46, 46, 46);
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   display: grid;
   place-items: center;
 }

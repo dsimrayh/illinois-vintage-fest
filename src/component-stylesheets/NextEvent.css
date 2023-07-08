@@ -3,7 +3,7 @@
 }
 
 #flyer-container {
-  background-color: rgb(236, 246, 253);
+  background-color: #6587c7;
   display: grid;
   place-items: center;
 }
@@ -16,7 +16,7 @@
 }
 
 #description-container {
-  background-color: rgb(236, 246, 253);
+  background-color: #6587c7;
   padding: 2rem 5rem;
 
   display: flex;
@@ -36,12 +36,13 @@
   font-family: var(--main-font);
   font-size: clamp(5rem, 8vw + 1rem, 12rem);
   line-height: 1;
-  color: #e68e97;
+  color: #fff;
 }
 
 #next-event-description {
   font-family: var(--sub-text-font);
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-size: clamp(1rem, 1vw, 1.25rem);
+  color: #fff;
 }
 
 #learn-more-btn {

@@ -1,6 +1,6 @@
 #contact {
   padding: 5rem 2rem;
-  background-color: #a0e6a8;
+  background-color: var(--primary-blue); /* #a0e6a8 */
   text-align: center;
 
   display: flex;
@@ -13,14 +13,15 @@
 #contact-heading {
   font-size: clamp(6rem, 10vw + 1rem, 12rem);
   font-family: var(--main-font);
-  color: #303a30;
+  color: #fff; /* #303a30 */
+  text-shadow: -2px 8px 10px #000;
   text-transform: uppercase;
   line-height: 1;
 }
 
 #contact-subtext {
   font-family: var(--sub-text-font);
-  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
 }
 
 #contact-phone {
