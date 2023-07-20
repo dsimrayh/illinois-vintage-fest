@@ -1,32 +1,88 @@
 #socials {
   background-color: var(--primary-blue);
-  padding: 2rem 1rem;
+  padding: 5rem 2rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 6rem;
 }
 
 #socials-header {
+  font-size: clamp(3rem, 4vw + 1rem, 6.5rem);
   font-family: var(--main-font);
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
+  text-shadow: -2px 8px 10px #000;
+  line-height: 1;
 }
 
 #socials-links-container {
-  width: 80%;
+  width: 90%;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.socials-link:hover {
+  animation: shake 0.75s 1;
+}
+
+.socials-link > a:link,
+.socials-link > a:visited {
+  text-decoration: none;
 }
 
 .socials-name {
+  font-size: clamp(0.9rem, 1vw, 1.25rem);
   font-family: var(--sub-text-font);
+  color: #fff;
   text-align: center;
+  text-shadow: -2px 2px 2px #000;
+  margin-top: 1.5rem;
 }
 
 .socials-img {
   width: 15vw;
+  min-width: 7rem;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(1deg);
+  }
+  20% {
+    transform: rotate(-1deg);
+  }
+  30% {
+    transform: rotate(1deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  60% {
+    transform: rotate(-1deg);
+  }
+  70% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  90% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
