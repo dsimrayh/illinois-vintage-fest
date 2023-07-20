@@ -1,4 +1,4 @@
-#contact {
+#phone {
   padding: 5rem 2rem;
   background-color: var(--primary-blue); /* #a0e6a8 */
   text-align: center;
@@ -10,7 +10,7 @@
   gap: 3rem;
 }
 
-#contact-heading {
+#phone-heading {
   font-size: clamp(6rem, 10vw + 1rem, 12rem);
   font-family: var(--main-font);
   color: #fff; /* #303a30 */
@@ -19,12 +19,12 @@
   line-height: 1;
 }
 
-#contact-subtext {
+#phone-subtext {
   font-family: var(--sub-text-font);
   font-size: clamp(1rem, 1.25vw, 1.5rem);
 }
 
-#contact-phone {
+#phone-number {
   font-family: var(--main-font);
   font-size: clamp(3rem, 5vw + 1rem, 8rem);
   color: #1c201b;

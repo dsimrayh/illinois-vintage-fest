@@ -1,0 +1,32 @@
+#socials {
+  background-color: var(--primary-blue);
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#socials-header {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#socials-links-container {
+  width: 80%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials-name {
+  font-family: var(--sub-text-font);
+  text-align: center;
+}
+
+.socials-img {
+  width: 15vw;
+}

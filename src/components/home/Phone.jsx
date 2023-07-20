@@ -1,14 +1,14 @@
-import '../component-stylesheets/Contact.css';
+import '../../component-styles/home/Phone.css';
 
-export default function Contact() {
+export default function Phone() {
   return (
-    <section id="contact">
-      <h4 id="contact-heading">Shoot us a text</h4>
-      <p id="contact-subtext">
+    <section id="phone">
+      <h4 id="phone-heading">Shoot us a text</h4>
+      <p id="phone-subtext">
         Send us a text to subscribe for SMS updates. You can also text us with
         any questions or just to say hello!
       </p>
-      <p id="contact-phone">708-627-9815</p>
+      <p id="phone-number">708-627-9815</p>
 
       <a
         href="https://my.community.com/illinoisvintagefest"

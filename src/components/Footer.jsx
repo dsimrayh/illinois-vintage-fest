@@ -1,4 +1,4 @@
-import '../component-stylesheets/Footer.css';
+import '../component-styles/Footer.css';
 
 export default function Footer() {
   return (
@@ -9,7 +9,8 @@ export default function Footer() {
           href="https://github.com/dsimrayh"
           target="_blank"
           id="github-link"
-          className="pointer" rel="noreferrer"
+          className="pointer"
+          rel="noreferrer"
         >
           dsimrayh
         </a>

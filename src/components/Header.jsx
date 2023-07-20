@@ -1,13 +1,9 @@
-import '../component-stylesheets/Header.css';
-import ShopClosedModal from '../components/ShopClosedModal';
+import '../component-styles/Header.css';
+import ShopClosedModal from './ShopClosedModal';
 import { useState } from 'react';
 
-export default function Header() {
+export default function Header({ setPage }) {
   const [shopClosedModalVisible, setShopClosedModalVisible] = useState(false);
-
-  function loadHomePage() {
-    console.log('load home page');
-  }
 
   function handleShopBtnClick() {
     setShopClosedModalVisible(true);
@@ -20,15 +16,45 @@ export default function Header() {
         className="pointer"
         src="./src/assets/ivf-logo.png"
         alt="logo-image"
-        onClick={loadHomePage}
+        onClick={() => setPage('home')}
       ></img>
       <nav id="nav">
         <ul id="nav-ul">
-          <li className="nav-item pointer">Upcoming</li>
-          <li className="nav-item pointer">Previous</li>
-          <li className="nav-item pointer">Our Story</li>
-          <li className="nav-item pointer">Contact</li>
-          <li className="nav-item pointer">FAQ</li>
+          <li
+            className="nav-item pointer"
+            id="upcoming"
+            onClick={(e) => setPage(e.target.id)}
+          >
+            Upcoming
+          </li>
+          <li
+            className="nav-item pointer"
+            id="previous"
+            onClick={(e) => setPage(e.target.id)}
+          >
+            Previous
+          </li>
+          <li
+            className="nav-item pointer"
+            id="our story"
+            onClick={(e) => setPage(e.target.id)}
+          >
+            Our Story
+          </li>
+          <li
+            className="nav-item pointer"
+            id="contact"
+            onClick={(e) => setPage(e.target.id)}
+          >
+            Contact
+          </li>
+          <li
+            className="nav-item pointer"
+            id="FAQ"
+            onClick={(e) => setPage(e.target.id)}
+          >
+            FAQ
+          </li>
         </ul>
       </nav>
       <button

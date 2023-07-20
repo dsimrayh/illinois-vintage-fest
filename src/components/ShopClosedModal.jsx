@@ -1,4 +1,4 @@
-import '../component-stylesheets/ShopClosedModal.css';
+import '../component-styles/ShopClosedModal.css';
 
 export default function ShopClosedModal({ setModalVisible }) {
   function handleBackBtnClick() {

@@ -1,4 +1,4 @@
-import '../component-stylesheets/Marquee.css';
+import '../../component-styles/home/Marquee.css';
 
 export default function Marquee() {
   const MarqueeBlock = () => (

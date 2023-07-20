@@ -1,4 +1,4 @@
-import '../component-stylesheets/PastEvents.css';
+import '../../component-styles/home/PastEvents.css';
 
 export default function PastEvents() {
   return (

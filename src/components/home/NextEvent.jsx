@@ -1,4 +1,4 @@
-import '../component-stylesheets/NextEvent.css';
+import '../../component-styles/home/NextEvent.css';
 
 export default function NextEvent() {
   return (
