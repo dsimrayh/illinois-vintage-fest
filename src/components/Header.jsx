@@ -1,16 +1,18 @@
 import '../component-styles/Header.css';
+import Menu from './Menu';
+import MobileMenu from './MobileMenu';
 import ShopClosedModal from './ShopClosedModal';
 import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Header({ setPage }) {
   const [shopClosedModalVisible, setShopClosedModalVisible] = useState(false);
 
-  function handleShopBtnClick() {
-    setShopClosedModalVisible(true);
-  }
+  const isMobile = useMediaQuery({ query: `(max-width: 50em)` });
 
   return (
     <header id="header">
+      {isMobile && <MobileMenu setPage={setPage}></MobileMenu>}
       <img
         id="logo-image"
         className="pointer"
@@ -18,49 +20,11 @@ export default function Header({ setPage }) {
         alt="logo-image"
         onClick={() => setPage('home')}
       ></img>
-      <nav id="nav">
-        <ul id="nav-ul">
-          <li
-            className="nav-item pointer"
-            id="upcoming"
-            onClick={(e) => setPage(e.target.id)}
-          >
-            Upcoming
-          </li>
-          <li
-            className="nav-item pointer"
-            id="previous"
-            onClick={(e) => setPage(e.target.id)}
-          >
-            Previous
-          </li>
-          <li
-            className="nav-item pointer"
-            id="our story"
-            onClick={(e) => setPage(e.target.id)}
-          >
-            Our Story
-          </li>
-          <li
-            className="nav-item pointer"
-            id="contact"
-            onClick={(e) => setPage(e.target.id)}
-          >
-            Contact
-          </li>
-          <li
-            className="nav-item pointer"
-            id="FAQ"
-            onClick={(e) => setPage(e.target.id)}
-          >
-            FAQ
-          </li>
-        </ul>
-      </nav>
+      {isMobile ? <p>ICON</p> : <Menu setPage={setPage}></Menu>}
       <button
         id="header-button"
         className="pointer"
-        onClick={handleShopBtnClick}
+        onClick={() => setShopClosedModalVisible(true)}
       >
         Shop
       </button>

@@ -33,22 +33,3 @@
 #header-button:active {
   transform: scale(0.95);
 }
-
-#nav-ul {
-  list-style: none;
-
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.nav-item {
-  margin: 0 0.5em;
-  color: #fff;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
-}
-
-.nav-item:hover {
-  color: #6cf089;
-  transition: color 0.4s ease;
-}
