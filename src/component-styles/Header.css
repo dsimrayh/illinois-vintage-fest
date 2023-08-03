@@ -14,9 +14,22 @@
   gap: 1rem;
 }
 
+@media only screen and (max-width: 50em) {
+  #header {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+}
+
 #logo-image {
   width: 150px;
   height: 150px;
+}
+
+@media only screen and (max-width: 50em) {
+  #logo-image {
+    margin-right: auto;
+  }
 }
 
 #header-button {

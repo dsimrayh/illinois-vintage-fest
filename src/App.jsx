@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 function App() {
   const [page, setPage] = useState('home');
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const pages = {
     home: <Home></Home>,
@@ -14,8 +15,15 @@ function App() {
   };
 
   return (
-    <div id="site-wrapper">
-      <Header setPage={setPage}></Header>
+    <div
+      id="site-wrapper"
+      className={mobileMenuVisible ? 'position-fixed' : null}
+    >
+      <Header
+        setPage={setPage}
+        mobileMenuVisible={mobileMenuVisible}
+        setMobileMenuVisible={setMobileMenuVisible}
+      ></Header>
       {pages[page]}
       <Footer></Footer>
     </div>
