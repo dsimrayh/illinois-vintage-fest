@@ -16,6 +16,10 @@ export default function Header({
 
   const isMobile = useMediaQuery({ query: `(max-width: 50em)` });
 
+  if (!isMobile) {
+    setMobileMenuVisible(false);
+  }
+
   return (
     <header id="header">
       {isMobile && (
@@ -32,17 +36,7 @@ export default function Header({
         alt="logo-image"
         onClick={() => setPage('home')}
       ></img>
-      {isMobile ? (
-        <FontAwesomeIcon
-          icon={faBars}
-          size="2x"
-          className="pointer"
-          inverse
-          onClick={() => setMobileMenuVisible(true)}
-        ></FontAwesomeIcon>
-      ) : (
-        <Menu setPage={setPage}></Menu>
-      )}
+      {!isMobile && <Menu setPage={setPage}></Menu>}
       <button
         id="header-button"
         className="pointer"
@@ -50,6 +44,15 @@ export default function Header({
       >
         Shop
       </button>
+      {isMobile && (
+        <FontAwesomeIcon
+          icon={faBars}
+          size="2x"
+          className="pointer"
+          inverse
+          onClick={() => setMobileMenuVisible(true)}
+        ></FontAwesomeIcon>
+      )}
       {shopClosedModalVisible && (
         <ShopClosedModal
           setModalVisible={setShopClosedModalVisible}

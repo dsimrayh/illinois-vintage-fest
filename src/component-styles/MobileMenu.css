@@ -30,7 +30,7 @@
 }
 
 .mobile-nav-item {
-  color: #cc4c4c;
+  color: #4384da;
   font-size: clamp(3rem, 4vw + 1rem, 6.5rem);
   font-family: var(--main-font);
 }

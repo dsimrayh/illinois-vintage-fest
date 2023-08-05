@@ -16,19 +16,20 @@
 
 @media only screen and (max-width: 50em) {
   #header {
+    padding: 1rem 1rem;
     justify-content: flex-start;
-    gap: 2rem;
   }
 }
 
 #logo-image {
   width: 150px;
-  height: 150px;
+  aspect-ratio: 1 / 1;
 }
 
 @media only screen and (max-width: 50em) {
   #logo-image {
     margin-right: auto;
+    width: 90px;
   }
 }
 
@@ -45,4 +46,12 @@
 
 #header-button:active {
   transform: scale(0.95);
+}
+
+@media only screen and (max-width: 50em) {
+  #header-button {
+    padding: 0.4em 0.8em;
+    font-size: calc(1vw + 1.25rem);
+    box-shadow: -8px 8px 0 #965f65;
+  }
 }
