@@ -2,10 +2,22 @@
   display: flex;
 }
 
+@media only screen and (max-width: 50em) {
+  #next-event {
+    flex-direction: column;
+  }
+}
+
 #flyer-container {
   background-color: #6587c7;
   display: grid;
   place-items: center;
+}
+
+@media only screen and (max-width: 50em) {
+  #flyer-container {
+    padding: 2rem;
+  }
 }
 
 #flyer-img {
@@ -13,6 +25,13 @@
   min-width: 26rem;
   aspect-ratio: 1/1;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 50em) {
+  #flyer-img {
+    width: 68vw;
+    min-width: 16rem;
+  }
 }
 
 #description-container {
@@ -25,10 +44,28 @@
   gap: 2rem;
 }
 
+@media only screen and (max-width: 50em) {
+  #description-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 #description-text-wrapper {
   display: flex;
   flex-direction: column;
   gap: clamp(0.5rem, 1vw, 1rem);
+}
+
+@media only screen and (max-width: 50em) {
+  #description-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
 }
 
 #next-event-heading {
@@ -59,4 +96,10 @@
 
 #learn-more-btn:active {
   transform: scale(0.95);
+}
+
+@media only screen and (max-width: 50em) {
+  #learn-more-btn {
+    margin-bottom: 2rem;
+  }
 }

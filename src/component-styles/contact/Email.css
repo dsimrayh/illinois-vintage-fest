@@ -30,6 +30,12 @@
   flex-direction: column;
 }
 
+@media only screen and (max-width: 50em) {
+  #email-form {
+    padding: 1.5rem;
+  }
+}
+
 .email-form-label {
   font-family: var(--sub-text-font);
   font-size: clamp(1rem, 1.25vw, 1.5rem);
