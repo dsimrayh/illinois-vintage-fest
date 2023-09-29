@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import UpcomingEvents from './pages/UpcomingEvents';
 import Footer from './components/Footer';
 import './App.css';
 import { useState } from 'react';
@@ -12,6 +13,7 @@ function App() {
   const pages = {
     home: <Home></Home>,
     contact: <Contact></Contact>,
+    upcoming: <UpcomingEvents></UpcomingEvents>,
   };
 
   return (
