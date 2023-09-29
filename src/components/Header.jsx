@@ -2,7 +2,7 @@ import '../component-styles/Header.css';
 import Menu from './Menu';
 import MobileMenu from './MobileMenu';
 import ShopClosedModal from './ShopClosedModal';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -16,9 +16,9 @@ export default function Header({
 
   const isMobile = useMediaQuery({ query: `(max-width: 50em)` });
 
-  if (!isMobile) {
-    setMobileMenuVisible(false);
-  }
+  useEffect(() => {
+    if (!isMobile) setMobileMenuVisible(false);
+  }, [isMobile, setMobileMenuVisible]);
 
   return (
     <header id="header">

@@ -1,0 +1,17 @@
+.upcoming-event-tile {
+  /* TBD */
+}
+
+.upcoming-event-img {
+  block-size: auto;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.upcoming-event-info {
+  /* TBD */
+}
+
+.upcoming-event-info-text {
+  font-family: var(--sub-text-font);
+}

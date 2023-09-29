@@ -1,0 +1,28 @@
+#upcoming-events-container {
+  background-color: var(--primary-blue);
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#upcoming-events-header {
+  font-size: clamp(3rem, 4vw + 1rem, 6.5rem);
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: -2px 8px 10px #000;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+#upcoming-events-list {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
